@@ -1,0 +1,124 @@
+section{
+  background-color: var(--primary-color);
+  height: 720px;
+  width: 1440px;
+}
+.app__section-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.app__section-card{
+  height: 374px;
+  width: 350px;
+  background-color: #ffff;
+  margin-top: 174px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 15px;
+  position: relative;
+  z-index: 1;
+}
+  img.top{
+  position: absolute;
+  left: -289px;
+  top: -502px;
+}
+@media screen and (max-width:768px) {
+  img.top{
+    left: -613px;
+  }
+  .app__section-card{
+    left: -23%;
+  }
+  img.bottom{
+    margin-left: -300px;
+  }
+}
+@media screen and (max-width:375px) {
+  img.top{
+    left: -815px;
+  }
+  .app__section-card{
+    left: -37%;
+  }
+  img.bottom{
+    margin-left: -136%;
+  }
+}
+.app__section-card .top-block img{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.app__section-card .middle-block {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.app__section-card .middle-block img{
+  position: absolute;
+  top: 24%;
+  left: 34%;
+  border: 2px solid #ffff;
+  border-radius: 50%;
+}
+.app__section-card .middle-block h3{
+  margin-top: 73px;
+  font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+color: var(--secondary-color);
+}
+.app__section-card .middle-block span {
+  color: var(--third-color);
+  font-weight: 400;
+  margin-left: 8px;
+}
+.app__section-card .middle-block p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 18px;
+  color: var(--third-color);
+}
+.app__section-card hr{
+  margin-top: 33px;
+  color: var(--lightGray-color);
+}
+.app__section-card .bottom-block {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.app__section-card .bottom-block .followrs{
+  display: flex;
+  position: relative;
+  left: -32px;
+  margin-top: 30PX;
+  margin-left: 36px;
+}
+.app__section-card .bottom-block .followrs p{
+  position: relative;
+  left: 75%;
+  top: -20PX;
+  padding-right: 40px;
+  font-weight: 700;
+}
+.app__section-card .bottom-block .titles{
+  display: flex;
+  position: relative;
+  left: -103px;
+  margin-top: 29px;
+}
+.app__section-card .bottom-block .titles p{
+  padding-right: 46px;
+  position: relative;
+  font-size: 12px;
+}
+
+img.bottom{
+  position: absolute;
+  left: 694px;
+  top: 378px;
+  z-index: 0;
+}
